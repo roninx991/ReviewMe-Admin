@@ -24,7 +24,7 @@ var u_router = function(web3) {
                     }
                 });
 
-                Requests.deleteOne({ address: req.body.data}, function(err, result) {
+                Requests.deleteOne({ owner: req.body.data}, function(err, result) {
                     if (err == undefined) {
                         console.log("Deleted Request successfully!!");
 
